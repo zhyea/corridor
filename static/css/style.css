@@ -1,0 +1,21 @@
+/*
+Theme Name: Corridor
+Theme URI: https://www.chobit.org/
+Author: robin
+Author URI: https://www.chobit.org/
+Description: A gallery theme.
+Version: 0.1
+*/
+
+
+.main {
+    width: 100%;
+}
+
+
+/* --------- index --------- */
+
+.post {
+    border: 1px solid #000;
+    height: 36px;
+}

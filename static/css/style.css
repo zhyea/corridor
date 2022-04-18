@@ -6,6 +6,7 @@ Author URI: https://www.chobit.org/
 Description: A gallery theme.
 Version: 0.1
 */
+/* --------- common --------- */
 
 
 .main {
@@ -15,7 +16,12 @@ Version: 0.1
 
 /* --------- index --------- */
 
-.post {
+.post-gallery .post {
     border: 1px solid #000;
-    height: 36px;
+    height: 350px;
+    width: 30px;
+}
+
+.clear {
+    clear: both;
 }

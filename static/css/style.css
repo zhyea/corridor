@@ -13,6 +13,10 @@ Version: 0.1
     width: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
 
 /* --------- index --------- */
 
@@ -20,8 +24,4 @@ Version: 0.1
     border: 1px solid #000;
     height: 350px;
     width: 30px;
-}
-
-.clear {
-    clear: both;
 }

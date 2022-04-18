@@ -17,11 +17,29 @@ Version: 0.1
     clear: both;
 }
 
+body {
+    background: #f7f7f7;
+    color: #424242;
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+}
 
 /* --------- index --------- */
 
+.post-gallery {
+    margin: 0 -12px 10px;
+}
+
 .post-gallery .post {
-    border: 1px solid #000;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 0 12px 25px;
+    border: 1px solid #e1e1e1;
     height: 350px;
-    width: 30px;
+    width: 300px;
+    vertical-align: top;
+    text-align: left;
 }

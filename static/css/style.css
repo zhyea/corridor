@@ -9,27 +9,47 @@ Version: 0.1
 /* --------- common --------- */
 
 
+body {
+    background: #D7D7D7;
+    color: #424242;
+    margin: 0;
+    min-width: 300px;
+    min-height: 320px;
+    overflow-x: hidden;
+}
+
+
 .main {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .clear {
     clear: both;
 }
 
-body {
-    background: #f7f7f7;
-    color: #424242;
-    margin: 0;
-    min-width: 320px;
-    min-height: 320px;
-    overflow-x: hidden;
+
+/* --------- navbar --------- */
+
+.navbar {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.navbar .container-fluid {
+    padding: 0 24px;
 }
 
 /* --------- index --------- */
 
+.body {
+    padding: 36px 0;
+}
+
 .post-gallery {
-    margin: 0 -12px 10px;
+    margin: 0;
+    text-align: center;
 }
 
 .post-gallery .post {
@@ -39,6 +59,7 @@ body {
     position: relative;
     margin: 0 12px 25px;
     border: 1px solid #e1e1e1;
+    background-color: #FFF;
     height: 350px;
     width: 300px;
     vertical-align: top;

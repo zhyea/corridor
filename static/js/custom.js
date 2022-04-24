@@ -1,14 +1,12 @@
-window.addEventListener('resize', middleContentBody);
-window.addEventListener('load', middleContentBody);
+window.addEventListener('resize', resizeContentBody);
+window.addEventListener('load', resizeContentBody);
 
-/**
- * 使contentBody块动态居中
- */
-function middleContentBody() {
-    console.log(document.body.clientWidth);    //浏览器时下窗口文档body的高度
-    let bodyWidth = document.body.clientWidth - 49;
+function resizeContentBody() {
+    //console.log(document.body.clientWidth);    //浏览器时下窗口文档body的高度
+    let bodyWidth = document.body.clientWidth;
+    bodyWidth = bodyWidth > 1300 ? 1300 - 2 : bodyWidth - 2
     let valMargin = Math.floor((bodyWidth % 316) / 2);
+    //console.log(valMargin);
     let domContent = document.getElementById("content-body");
-    console.log(valMargin);
     domContent.style.cssText = ('margin: 0 ' + valMargin + 'px');
 }

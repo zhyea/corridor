@@ -12,10 +12,11 @@ Version: 0.1
 body {
     background: #f5f5f5;
     color: #424242;
-    font-family: sans-serif, Helvetica, Roboto;
+    font-family: Calibri, Arial, Lucida, sans-serif, Helvetica, Roboto;
     margin: 0;
     padding: 0;
     min-width: 300px;
+    font-size: 1em;
 }
 
 
@@ -23,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     color: #222222;
     margin: 0;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 
@@ -31,9 +32,13 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 1300px;
     max-width: 100%;
-    margin: 0 21px;
+    margin: 0 auto;
     padding: 0;
-    border: 1px solid #0f5132;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    box-shadow: 0 0 6px 6px rgba(200, 200, 200, .36);
 }
 
 .clear {
@@ -86,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item, .dropdown-item {
-    font-size: 0.93em;
+    font-size: 1em;
 }
 
 .nav-link {
@@ -122,18 +127,96 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     float: left;
     overflow: hidden;
-    margin: 0 8px 25px;
+    margin: 0 8px 8px;
+    padding: 0;
     border: 1px solid #e1e1e1;
     background-color: #FFF;
-    height: 350px;
+    height: 345px;
     width: 300px;
     vertical-align: top;
     text-align: left;
 }
 
+.post-gallery .post a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.post-gallery .post .post-title {
+    display: block;
+    width: 100%;
+    padding: 12px;
+}
+
+.post-gallery .post .post-title h2 {
+    font-size: 1em;
+}
+
+.post-gallery .post .post-title a {
+    color: #424242;
+}
+
+.post-gallery .post .post-meta .keywords, .post-gallery .post .post-meta .category {
+    display: block;
+    padding: 0 12px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.post-meta {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+}
+
+.post-gallery .post .post-meta .keywords {
+    float: left;
+    padding-right: 36px;
+}
+
+.post-gallery .post .post-meta .category {
+    float: right;
+    text-align: right;
+}
+
+.post-gallery .post:hover .post-meta a {
+    color: #a8a8a8;
+}
+
+.post-gallery .post:hover .post-title a {
+    color: #d56464;
+}
+
 
 .foot {
-    margin-bottom: 32px;
+    margin: 0;
+    width: 100%;
+    padding-top: 18px;
     border-top: 1px solid #d9d9d9;
+}
 
+.foot .row {
+    margin: 0;
+}
+
+.foot .copyright {
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+
+.foot .widget {
+    margin-bottom: 27px;
+    padding-left: 27px;
+}
+
+.foot .widget h3 {
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 9px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d9d9d9;
 }

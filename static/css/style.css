@@ -227,8 +227,32 @@ h1, h2, h3, h4, h5, h6 {
 /* --------- widget --------- */
 
 .article .article-title {
+    padding: 18px;
+    font-size: 1.2em;
     text-align: center;
     border-bottom: 1px solid #d9d9d9;
+}
+
+.article .article-meta {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.article .article-meta .social, .article .article-meta .keywords {
+    padding: 18px 0;
+    height: 100%;
+    line-height: 110%;
+}
+
+.article .article-meta .social {
+    float: left;
+    text-align: left;
+    width: 30%;
+}
+
+.article .article-meta .keywords {
+    float: right;
+    text-align: right;
+    width: 70%;
 }
 
 

@@ -12,8 +12,24 @@ function resizeContentBody() {
 }
 
 
-function socialButtons() {
-    document.writeln('Button');
-    //<a href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent('您的链接')+'&t='+encodeURIComponent(document.title),'_blank','toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=600, height=450,top=100,left=350');void(0)" style="font-size: 14px;margin-right: 50px;">Facebook </a>
-    //<a href="javascript:window.open('http://twitter.com/share?url=' + encodeURIComponent('您的链接') + '&text=' + encodeURIComponent('标题'), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');void(0)"  style="font-size: 14px;margin-right: 50px;">Twitter</a>
+function socialButtons(url, title) {
+    let linkTwitter = "https://twitter.com/share?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(title);
+    let linkFacebook = "https://www.facebook.com/sharer.php?u=" + encodeURIComponent(url) + "&t=" + encodeURIComponent(title);
+
+    let text = socialWinLink(linkTwitter, 'static/img/social/twitter.svg');
+    text += '&nbsp;';
+    text += socialWinLink(linkFacebook, 'static/img/social/facebook.svg')
+
+    document.writeln(text);
+}
+
+
+function socialWinLink(socialUrl, pathIcon) {
+    let link = "<a href=\"javascript:window.open('";
+    link += socialUrl;
+    link += "', '', ";
+    link += "'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');void(0)\"  style=\"margin-right: 6px;\">";
+    link += "<img height=\"16\" width=\"16\" src=\"" + pathIcon + "\"/>";
+    link += "</a>";
+    return link;
 }

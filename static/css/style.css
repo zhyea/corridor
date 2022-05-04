@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2em;
 }
 
+a {
+    color: #d56464;
+}
+
 .wrapper {
     display: block;
     width: 1600px;
@@ -134,8 +138,26 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
-.post-gallery .post a {
+
+.post-gallery .post .post-image {
+    position: relative;
+}
+
+.post-gallery .post .post-remark {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #d56464;
+    height: 72px;
+    width: 100%;
+    padding: 6px 12px;
+    opacity: 0;
+    transition: opacity 2s;
     color: #FFF;
+}
+
+.post-gallery .post a {
     text-decoration: none;
 }
 
@@ -146,36 +168,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-gallery .post .post-title h2 {
-    font-size: 1em;
+    font-size: 0.96em;
 }
 
 .post-gallery .post .post-title a {
     color: #424242;
 }
 
-.post-gallery .post .post-meta .keywords, .post-gallery .post .post-meta .category {
-    display: block;
-    padding: 0 12px;
-    width: 50%;
-    overflow: hidden;
-}
 
-.post-meta {
+.post-gallery .post .post-meta {
     overflow: hidden;
     width: 100%;
     position: absolute;
     bottom: 9px;
+    font-size: 0.93em;
+    opacity: 0;
+    transition: opacity 2s;
 }
+
+.post-gallery .post .post-meta a {
+    display: inline;
+    color: #a8a8a8 !important;
+}
+
+.post-gallery .post .post-meta .keywords, .post-gallery .post .post-meta .category {
+    display: block;
+    padding: 0 12px;
+    height: 1.8em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 
 .post-gallery .post .post-meta .keywords {
+    width: 65%;
     float: left;
-    padding-right: 36px;
+    padding-right: 18px;
 }
 
+
+.post-gallery .post .post-meta .keywords .keywords-icon {
+    display: inline;
+    float: left;
+    padding-right: 5px;
+}
+
+
 .post-gallery .post .post-meta .category {
+    width: 35%;
     float: right;
     text-align: right;
 }
+
 
 .post-gallery .post:hover .post-meta a {
     color: #a8a8a8;
@@ -183,6 +227,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-gallery .post:hover .post-title a {
     color: #d56464;
+}
+
+.post-gallery .post:hover .post-meta, .post-gallery .post:hover .post-remark {
+    transition-duration: 1s;
+    opacity: 0.9;
 }
 
 
@@ -297,5 +346,15 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-
+/* --------- archive --------- */
+.alert-msg {
+    display: block;
+    margin: 0 9px 5px;
+    padding: 3px 9px;
+    background-color: #e4e4e4;
+    border: 1px solid #bfbfbf;
+    border-radius: 0;
+    line-height: 180%;
+    color: #959595;
+}
 

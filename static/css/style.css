@@ -154,6 +154,8 @@ a {
     padding: 6px 12px;
     opacity: 0;
     transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
     color: #FFF;
 }
 
@@ -184,6 +186,8 @@ a {
     font-size: 0.93em;
     opacity: 0;
     transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
 }
 
 .post-gallery .post .post-meta a {
@@ -231,6 +235,8 @@ a {
 
 .post-gallery .post:hover .post-meta, .post-gallery .post:hover .post-remark {
     transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
     opacity: 0.9;
 }
 

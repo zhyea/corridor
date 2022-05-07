@@ -32,8 +32,8 @@ a {
 
 .wrapper {
     display: block;
-    width: 1600px;
-    max-width: 100%;
+    max-width: 1620px;
+    min-width: 350px;
     margin: 0 auto;
     padding: 0;
     border-top: none;
@@ -114,7 +114,7 @@ a {
 /* --------- index --------- */
 
 .body {
-    padding: 18px 0;
+    padding: 9px 0;
 }
 
 .post-gallery {
@@ -282,7 +282,7 @@ a {
 /* --------- article --------- */
 
 .page {
-    width: 1300px;
+    max-width: 1300px;
 }
 
 .article {
@@ -364,3 +364,14 @@ a {
     color: #959595;
 }
 
+@media screen and (min-width: 1312px) {
+    .wrapper {
+        max-width: 1312px;
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    .wrapper {
+        max-width: 1620px;
+    }
+}

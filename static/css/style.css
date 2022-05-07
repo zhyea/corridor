@@ -32,7 +32,6 @@ a {
 
 .wrapper {
     display: block;
-    max-width: 1620px;
     min-width: 350px;
     margin: 0 auto;
     padding: 0;
@@ -364,14 +363,3 @@ a {
     color: #959595;
 }
 
-@media screen and (min-width: 1312px) {
-    .wrapper {
-        max-width: 1312px;
-    }
-}
-
-@media screen and (min-width: 1620px) {
-    .wrapper {
-        max-width: 1620px;
-    }
-}

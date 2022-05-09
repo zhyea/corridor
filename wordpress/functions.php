@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * The functions for corridor.
+ *
+ * @package Corridor
+ */
 
 if (!function_exists('corridor_setup')) :
     /**

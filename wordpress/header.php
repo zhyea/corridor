@@ -23,4 +23,5 @@
 	</div>
 
 	<div class="neck">
+        <?php get_template_part( 'template-parts/navigation', 'none' ); ?>
 	</div>

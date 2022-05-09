@@ -14,3 +14,13 @@
 
     <?php wp_head(); ?>
 </head>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="logo">
+			<h1>Corridor</h1>
+		</div>
+	</div>
+
+	<div class="neck">
+	</div>

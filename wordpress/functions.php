@@ -21,7 +21,7 @@ if (!function_exists('corridor_setup')) :
         add_theme_support('post-thumbnails');
 
         // Set default Post Thumbnail size.
-        set_post_thumbnail_size(1360, 765, true);
+        set_post_thumbnail_size(300, 250, true);
 
         // Add support for responsive embed blocks.
         add_theme_support('responsive-embeds');

@@ -1,0 +1,365 @@
+/*
+Theme Name: Corridor
+Theme URI: https://www.chobit.org/
+Author: robin
+Author URI: https://www.chobit.org/
+Description: A gallery theme.
+Version: 0.1
+*/
+
+
+/* --------- common --------- */
+body {
+    background: #f5f5f5;
+    color: #424242;
+    font-family: Calibri, Arial, Lucida, sans-serif, Helvetica, Roboto;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    color: #222222;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+a {
+    color: #d56464;
+}
+
+.wrapper {
+    display: block;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    box-shadow: 0 0 6px 6px rgba(200, 200, 200, .36);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* --------- header --------- */
+
+.header {
+    min-height: 96px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .logo {
+    display: block;
+    padding-left: 18px;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.header .logo h1 {
+    margin-top: 36px;
+}
+
+
+/* --------- navbar --------- */
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8 !important;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 240%;
+}
+
+
+.navbar .container-fluid {
+    padding: 0 24px;
+}
+
+.navbar-brand {
+    font-size: 1em;
+}
+
+.nav-item, .dropdown-item {
+    font-size: 1em;
+}
+
+.nav-link {
+    color: #626262 !important;
+}
+
+.dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: #f8f8f8 !important;
+}
+
+.nav-item:hover, .dropdown-item:hover, .nav-item a:hover {
+    background-color: #d56464;
+    color: #FFFFFF !important;
+}
+
+/* --------- index --------- */
+
+.body {
+    padding: 9px 0;
+}
+
+.post-gallery {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.post-gallery .post {
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin: 10px;
+    padding: 0;
+    border: 1px solid #e1e1e1;
+    background-color: #FFF;
+    height: 345px;
+    width: 300px;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+.post-gallery .post .post-image {
+    position: relative;
+}
+
+.post-gallery .post .post-remark {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #d56464;
+    height: 72px;
+    width: 100%;
+    padding: 6px 12px;
+    opacity: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    color: #FFF;
+}
+
+.post-gallery .post a {
+    text-decoration: none;
+}
+
+.post-gallery .post .post-title {
+    display: block;
+    width: 100%;
+    padding: 12px;
+}
+
+.post-gallery .post .post-title h2 {
+    font-size: 0.96em;
+}
+
+.post-gallery .post .post-title a {
+    color: #424242;
+}
+
+
+.post-gallery .post .post-meta {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+    font-size: 0.93em;
+    opacity: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+}
+
+.post-gallery .post .post-meta a {
+    display: inline;
+    color: #a8a8a8 !important;
+}
+
+.post-gallery .post .post-meta .keywords, .post-gallery .post .post-meta .category {
+    display: block;
+    padding: 0 12px;
+    height: 1.8em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.post-gallery .post .post-meta .keywords {
+    width: 65%;
+    float: left;
+    padding-right: 18px;
+}
+
+
+.post-gallery .post .post-meta .keywords .keywords-icon {
+    display: inline;
+    float: left;
+    padding-right: 5px;
+}
+
+
+.post-gallery .post .post-meta .category {
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+
+
+.post-gallery .post:hover .post-meta a {
+    color: #a8a8a8;
+}
+
+.post-gallery .post:hover .post-title a {
+    color: #d56464;
+}
+
+.post-gallery .post:hover .post-meta, .post-gallery .post:hover .post-remark {
+    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    opacity: 0.9;
+}
+
+
+/* --------- footer --------- */
+
+.foot {
+    margin: 0;
+    width: 100%;
+    padding-top: 18px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.foot .row {
+    margin: 0;
+}
+
+.foot .copyright {
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+
+
+/* --------- widget --------- */
+
+.ci-widget {
+    margin-bottom: 27px;
+    padding-left: 27px;
+}
+
+.ci-widget h3 {
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 9px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+
+/* --------- article --------- */
+
+.page {
+    max-width: 1300px;
+}
+
+.article {
+    padding: 0 24px;
+}
+
+.article .article-title {
+    padding: 18px;
+    font-size: 1.6em;
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.article .article-title a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.article .article-title a:hover {
+    color: #d56464;
+}
+
+
+.article .article-meta {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.article .article-meta .social, .article .article-meta .keywords {
+    padding: 15px 0 12px;
+    height: 100%;
+}
+
+.article .article-meta .keywords a {
+    display: inline-block;
+    padding: 1px 5px;
+    border: 1px solid #c2c2c2;
+    color: #c9c9c9;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+.article .article-meta .keywords a:hover {
+    color: #d56464;
+    border: 1px solid #d56464;
+}
+
+
+.article .article-meta .social {
+    float: left;
+    text-align: left;
+    width: 30%;
+}
+
+.article .article-meta .keywords {
+    float: right;
+    text-align: right;
+    width: 70%;
+}
+
+.article .article-content {
+    padding: 24px 0;
+    line-height: 180%;
+}
+
+.article .article-content a {
+    color: #d56464;
+    text-decoration: none;
+}
+
+/* --------- archive --------- */
+.alert-msg {
+    display: block;
+    margin: 0 9px 5px;
+    padding: 3px 9px;
+    background-color: #e4e4e4;
+    border: 1px solid #bfbfbf;
+    border-radius: 0;
+    line-height: 180%;
+    color: #959595;
+}
+

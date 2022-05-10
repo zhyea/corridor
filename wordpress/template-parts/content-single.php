@@ -11,6 +11,7 @@
     </div>
     <div class="article-meta">
         <div class="social">
+			<?php echo corridor_svg( 'tags' ) ?>
             <script type="text/javascript">
                 socialButtons('http://localhost:82/corridor/', 'postTitle')
             </script>
@@ -23,6 +24,6 @@
         <div class="clear"></div>
     </div>
     <div class="article-content">
-        <?php the_content(); ?>
+		<?php the_content( '' ); ?>
     </div>
 </div>

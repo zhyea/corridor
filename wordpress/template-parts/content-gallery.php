@@ -9,12 +9,12 @@
 <div class="post">
     <div class="post-image">
         <a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
-            <?php the_post_thumbnail(array(300, 250)); ?>
+			<?php the_post_thumbnail( 'corridor-post-gallery' ); ?>
         </a>
         <div class="post-remark">this is remark</div>
     </div>
     <div class="post-title">
-        <?php the_title(sprintf('<h2><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
     </div>
     <div class="post-meta">
         <div class="keywords">
@@ -24,6 +24,6 @@
             <a href="#">KeyWords</a>
             <a href="#">KeyWords</a>
         </div>
-        <div class="category"><?php get_the_category_list( ', ' )?></div>
+        <div class="category"><?php get_the_category_list( ', ' ) ?></div>
     </div>
 </div>

@@ -8,10 +8,10 @@ function resizeContentBody() {
     let contentWidth;
     if (clientWidth > 1620) {
         contentWidth = 1620 - 2;
-        domWrapper.style.cssText = "max-width:1620px";
+        domWrapper.style.cssText = "width:1620px";
     } else if (clientWidth > 1312) {
         contentWidth = 1312 - 2;
-        domWrapper.style.cssText = "max-width:1312px";
+        domWrapper.style.cssText = "width:1312px";
     } else {
         contentWidth = clientWidth - 2;
         domWrapper.style.cssText = "";

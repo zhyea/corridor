@@ -71,14 +71,22 @@ add_action( 'after_setup_theme', 'corridor_add_image_sizes' );
  */
 function corridor_add_image_size_names( $sizes ) {
 	return array_merge( $sizes, array(
-		'post-thumbnail'     => esc_html__( 'Corridor Single Post', 'corridor' ),
-		'corridor-list-post' => esc_html__( 'Corridor List Post', 'corridor' ),
+		'post-thumbnail'        => esc_html__( 'Corridor Single Post', 'corridor' ),
+		'corridor-post-gallery' => esc_html__( 'Corridor List Post', 'corridor' ),
 	) );
 }
 
 add_filter( 'image_size_names_choose', 'corridor_add_image_size_names' );
 
 
+/**
+ * Control the gallery excerpt length
+ */
+function gallery_excerpt_length( $length ) {
+	return 32;
+}
+
+add_filter( "excerpt_length", "gallery_excerpt_length" );
 
 
 // Include SVG Icon Functions.

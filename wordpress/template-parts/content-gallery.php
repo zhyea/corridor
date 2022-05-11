@@ -11,19 +11,17 @@
         <a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
 			<?php the_post_thumbnail( 'corridor-post-gallery' ); ?>
         </a>
-        <div class="post-remark">this is remark</div>
+        <div class="post-remark">
+			<?php the_excerpt(); ?>
+        </div>
     </div>
     <div class="post-title">
 		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
     </div>
     <div class="post-meta">
         <div class="keywords">
-            <div class="keywords-icon"><img alt="keywords" height="15" src="static/img/tags.svg" width="15"/></div>
-            <a href="#">KeyWords</a>
-            <a href="#">KeyWords</a>
-            <a href="#">KeyWords</a>
-            <a href="#">KeyWords</a>
+			<?php corridor_gallery_keywords() ?>
         </div>
-        <div class="category"><?php get_the_category_list( ', ' ) ?></div>
+        <div class="category"><?php echo get_the_category_list( ', ' ) ?></div>
     </div>
 </div>

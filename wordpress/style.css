@@ -65,10 +65,14 @@ a {
     vertical-align: middle;
 }
 
-.header .logo h1 {
+.header .logo .site-title {
     margin-top: 48px;
 }
 
+.header .logo .site-title a {
+    text-decoration: none;
+    color: #424242;
+}
 
 /* --------- navbar --------- */
 
@@ -209,11 +213,9 @@ a {
     padding-right: 18px;
 }
 
-
-.post-gallery .post .post-meta .keywords .keywords-icon {
-    display: inline;
-    float: left;
-    padding-right: 5px;
+.post-gallery .post .post-meta .keywords .icon {
+    width: 17px;
+    height: 17px;
 }
 
 
@@ -280,10 +282,6 @@ a {
 
 /* --------- article --------- */
 
-.page {
-    max-width: 1300px;
-}
-
 .article {
     padding: 0 24px;
 }
@@ -334,6 +332,11 @@ a {
     float: left;
     text-align: left;
     width: 30%;
+}
+
+.article .article-meta .social .icon {
+    width: 17px;
+    height: 17px;
 }
 
 .article .article-meta .keywords {

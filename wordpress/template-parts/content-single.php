@@ -11,10 +11,7 @@
     </div>
     <div class="article-meta">
         <div class="social">
-			<?php echo corridor_svg( 'tags' ) ?>
-            <script type="text/javascript">
-                socialButtons('http://localhost:82/corridor/', 'postTitle')
-            </script>
+			<?php corridor_social_buttons() ?>
         </div>
         <div class="keywords">
             <a href="#">keywords</a>

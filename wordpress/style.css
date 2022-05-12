@@ -372,11 +372,18 @@ a {
     .wrapper {
         width: 1312px;
     }
-}
 
+    #content-body {
+        margin: 0 15px;
+    }
+}
 
 @media screen and (min-width: 1620px) {
     .wrapper {
         width: 1620px;
+    }
+
+    #content-body {
+        margin: 0 9px;
     }
 }

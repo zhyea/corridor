@@ -28,6 +28,11 @@ if ( ! function_exists( 'corridor_setup' ) ) :
 
 		// Add support for responsive embed blocks.
 		add_theme_support( 'responsive-embeds' );
+
+		// Register Navigation Menus.
+		register_nav_menus( array(
+			'primary' => esc_html__( 'Main Navigation' ),
+		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'corridor_setup' );
@@ -89,7 +94,10 @@ function gallery_excerpt_length( $length ) {
 add_filter( "excerpt_length", "gallery_excerpt_length" );
 
 
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/inc/bootstrap_nav_walker.php';
 // Include SVG Icon Functions.
-require get_template_directory() . '/inc/icons.php';
+require_once get_template_directory() . '/inc/icons.php';
 // Include Tag Functions.
-require get_template_directory() . '/inc/tags.php';
+require_once get_template_directory() . '/inc/tags.php';

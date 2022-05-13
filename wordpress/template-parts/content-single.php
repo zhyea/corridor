@@ -14,9 +14,7 @@
 			<?php corridor_social_buttons() ?>
         </div>
         <div class="keywords">
-            <a href="#">keywords</a>
-            <a href="#">keywords</a>
-            <a href="#">keywords</a>
+			<?php echo get_the_tag_list( '', ' ' ) ?>
         </div>
         <div class="clear"></div>
     </div>

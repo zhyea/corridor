@@ -99,6 +99,7 @@ a {
 }
 
 .nav-link {
+    padding: 8px !important;
     color: #626262 !important;
 }
 
@@ -109,7 +110,7 @@ a {
     background-color: #f8f8f8 !important;
 }
 
-.nav-item:hover, .dropdown-item:hover, .nav-item a:hover {
+.nav-item a:hover {
     background-color: #d56464;
     color: #FFFFFF !important;
 }
@@ -376,7 +377,9 @@ a {
     #content-body {
         margin: 0 15px;
     }
+
 }
+
 
 @media screen and (min-width: 1620px) {
     .wrapper {

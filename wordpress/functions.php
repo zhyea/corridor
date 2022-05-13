@@ -95,7 +95,7 @@ add_filter( "excerpt_length", "gallery_excerpt_length" );
 
 
 
-// Register Custom Navigation Walker
+// Register Bootstrap Navigation Walker
 require_once get_template_directory() . '/inc/bootstrap_nav_walker.php';
 // Include SVG Icon Functions.
 require_once get_template_directory() . '/inc/icons.php';

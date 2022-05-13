@@ -19,16 +19,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <!-- start Nav -->
-	        <?php
-	        wp_nav_menu( array(
-		        'theme_location' => 'primary',
-		        'depth'          => 2,
-		        'container'      => false,
-		        'menu_class'     => 'nav navbar-nav',
-		        'fallback_cb'    => 'bootstrap_nav_walker::fallback',
-		        'walker'         => new Bootstrap_Nav_Walker()
-	        ) );
-	        ?>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'primary',
+				'depth'          => 2,
+				'container'      => false,
+				'menu_class'     => 'nav navbar-nav',
+				'fallback_cb'    => 'bootstrap_nav_walker::fallback',
+				'walker'         => new Bootstrap_Nav_Walker()
+			) );
+			?>
             <!-- End Nav -->
         </div>
     </div>

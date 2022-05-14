@@ -10,7 +10,7 @@ function corridor_customize_settings( $wp_customize ) {
 
 	// Add Setting and Control for Excerpt Length.
 	$wp_customize->add_setting( 'corridor_options[excerpt_length]', array(
-		'default'           => 25,
+		'default'           => 36,
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'absint',
@@ -21,7 +21,7 @@ function corridor_customize_settings( $wp_customize ) {
 		'section'  => 'corridor_section',
 		'settings' => 'corridor_options[excerpt_length]',
 		'type'     => 'text',
-		'priority' => 180,
+		'priority' => 360,
 	) );
 
 }

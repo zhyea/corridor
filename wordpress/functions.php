@@ -84,20 +84,17 @@ function corridor_add_image_size_names( $sizes ) {
 add_filter( 'image_size_names_choose', 'corridor_add_image_size_names' );
 
 
-/**
- * Control the gallery excerpt length
- */
-function gallery_excerpt_length( $length ) {
-	return 32;
-}
-
-add_filter( "excerpt_length", "gallery_excerpt_length" );
-
-
-
 // Register Bootstrap Navigation Walker
 require_once get_template_directory() . '/inc/bootstrap_nav_walker.php';
 // Include SVG Icon Functions.
 require_once get_template_directory() . '/inc/icons.php';
 // Include Tag Functions.
 require_once get_template_directory() . '/inc/tags.php';
+// Register Bootstrap Navigation Walker
+require_once get_template_directory() . '/inc/bootstrap_nav_walker.php';
+// Include default options
+require_once get_template_directory() . '/inc/default-options.php';
+// Include template functions
+require_once get_template_directory() . '/inc/template-functions.php';
+// Include customizer
+require_once get_template_directory() . '/inc/customizer.php';

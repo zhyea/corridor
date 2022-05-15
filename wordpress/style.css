@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: #d56464;
+    text-decoration: none;
 }
 
 .wrapper {
@@ -286,8 +287,47 @@ a {
     margin: 9px 0;
     padding-bottom: 6px;
     border-bottom: 1px solid #d9d9d9;
+    color: #666;
 }
 
+.ci-widget table {
+    width: 100%;
+}
+
+.ci-widget, .ci-widget td, .ci-widget th, .ci-widget a {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.ci-widget td a {
+    color: #d56464;
+}
+
+.ci-widget a:hover {
+    color: #d56464;
+}
+
+.ci-widget ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+
+.ci-widget li {
+    list-style-type: square;
+    line-height: 160%;
+}
+
+.widget_meta ul {
+    margin: 0;
+    padding: 0 3px;
+    clear: both;
+}
+
+.widget_meta li {
+    list-style-type: none;
+    width: 50%;
+    float: left;
+}
 
 /* --------- article --------- */
 

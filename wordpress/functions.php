@@ -67,6 +67,21 @@ function corridor_add_image_sizes() {
 add_action( 'after_setup_theme', 'corridor_add_image_sizes' );
 
 
+function corridor_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'corridor' ),
+		'id'            => 'footer-widget',
+		'description'   => esc_html_x( 'Widgets will appear on footer.', 'widget area description', 'corridor' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s ci-widget col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h4>',
+	) );
+
+}
+add_action( 'widgets_init', 'corridor_widgets_init' );
+
+
 /**
  * Make custom image sizes available in Gutenberg.
  *

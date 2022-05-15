@@ -10,7 +10,7 @@ get_header();
     <div class="body" id="content-body">
 
         <div class="alert alert-secondary alert-msg" role="alert">
-            <?php the_archive_title(); ?> : <?php the_archive_description(); ?>
+            <?php the_archive_title(); ?> <?php the_archive_description(); ?>
         </div>
 
         <div class="post-gallery">

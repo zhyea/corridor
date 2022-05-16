@@ -26,7 +26,7 @@ function corridor_site_description() {
 	$description = get_bloginfo( 'description', 'display' );
 	if ( $description || is_customize_preview() ) :
 		?>
-        <p class="site-description"><?php echo $description; ?></p>
+		<p class="site-description"><?php echo $description; ?></p>
 	<?php
 	endif;
 }
@@ -47,11 +47,21 @@ function corridor_gallery_keywords() {
 }
 
 /**
+ * pagination
+ */
+function corridor_pagination() {
+	the_posts_pagination( array(
+		'mid_size' => 3,
+	) );
+}
+
+
+/**
  * Displays social buttons
  */
 function corridor_social_buttons() {
 	?>
-    <a href="javascript:window.open('https://twitter.com/share?url=<?php echo urlencode( get_permalink() ) ?>&text=<?php echo urlencode( get_the_title() ) ?>', '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');"><?php echo corridor_social_svg( 'twitter' ) ?></a>
-    <a href="javascript:window.open('https://www.facebook.com/sharer.php?u=<?php echo urlencode( get_permalink() ) ?>&t=<?php echo urlencode( get_the_title() ) ?>', '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');"><?php echo corridor_social_svg( 'facebook' ) ?></a>
+	<a href="javascript:window.open('https://twitter.com/share?url=<?php echo urlencode( get_permalink() ) ?>&text=<?php echo urlencode( get_the_title() ) ?>', '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');"><?php echo corridor_social_svg( 'twitter' ) ?></a>
+	<a href="javascript:window.open('https://www.facebook.com/sharer.php?u=<?php echo urlencode( get_permalink() ) ?>&t=<?php echo urlencode( get_the_title() ) ?>', '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');"><?php echo corridor_social_svg( 'facebook' ) ?></a>
 	<?php
 }

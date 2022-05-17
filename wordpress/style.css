@@ -429,14 +429,17 @@ a {
     display: none;
 }
 
-.pagination .nav-links .page-numbers {
+.pagination .nav-links .page-numbers, .pagination .post-page-numbers {
     border: 1px solid #d9d9d9;
-    padding: 3px 8px;
+    padding: 2px 8px;
     margin: 1px;
     color: #959595;
 }
 
-.pagination .nav-links .current, .pagination .nav-links .page-numbers:hover {
+.pagination .current,
+.pagination .post-page-numbers:hover,
+.pagination .nav-links .current,
+.pagination .nav-links .page-numbers:hover {
     background-color: #d56464;
     color: #FFF;
 }

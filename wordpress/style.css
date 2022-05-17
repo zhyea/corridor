@@ -418,7 +418,8 @@ a {
 
 /* --------- pagination --------- */
 
-.pagination {
+.navigation {
+    margin: 12px 9px 6px;
     display: block;
     width: 100%;
 }
@@ -428,9 +429,16 @@ a {
     display: none;
 }
 
-.pagination .nav-links a, .pagination .nav-links .page-numbers {
+.pagination .nav-links .page-numbers {
     border: 1px solid #d9d9d9;
-    padding: 6px 12px;
+    padding: 3px 8px;
+    margin: 1px;
+    color: #959595;
+}
+
+.pagination .nav-links .current, .pagination .nav-links .page-numbers:hover {
+    background-color: #d56464;
+    color: #FFF;
 }
 
 

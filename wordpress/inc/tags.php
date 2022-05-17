@@ -14,7 +14,8 @@ function corridor_site_logo() {
  */
 function corridor_site_title() {
 	?>
-    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+	                          rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 	<?php
 }
 

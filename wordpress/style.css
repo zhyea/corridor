@@ -272,6 +272,14 @@ a {
     text-align: center;
 }
 
+.foot .copyright a {
+    font-weight: bold;
+    color: #3a3a3a;
+}
+
+.foot .copyright a:hover {
+    color: #d56464;
+}
 
 /* --------- widget --------- */
 

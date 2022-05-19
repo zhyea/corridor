@@ -66,3 +66,13 @@ function corridor_social_buttons() {
 	<a href="javascript:window.open('https://www.facebook.com/sharer.php?u=<?php echo urlencode( get_permalink() ) ?>&t=<?php echo urlencode( get_the_title() ) ?>', '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');"><?php echo corridor_social_svg( 'facebook' ) ?></a>
 	<?php
 }
+
+
+/**
+ * Displays credit link on bottom
+ */
+function corridor_credit_link() {
+		?>
+	© 2021-<?php echo date("Y")."  ";  bloginfo( 'name' ); ?>.  Theme Corridor by <a href="https://www.chobit.org/theme-corridor/">Chobit</a>
+	<?php
+}

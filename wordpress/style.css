@@ -412,6 +412,21 @@ a {
     text-decoration: none;
 }
 
+/*------------------- wordpress private css ------------------- */
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.aligncenter p.wp-caption-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* --------- archive --------- */
 .alert-msg {
     display: block;

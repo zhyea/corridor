@@ -5,7 +5,7 @@
  * @package Corridor
  */
 ?>
-<div class="article">
+<div class="article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="article-title">
 		<h2><a href="#"><?php the_title(); ?></a></h2>
 	</div>

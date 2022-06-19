@@ -46,3 +46,29 @@ function corridor_short_excerpt( $excerpt ) {
 }
 
 add_filter( 'the_excerpt', 'corridor_short_excerpt' );
+
+
+/**
+ * get post thumbnail
+ *
+ * @param $size string|int[] size of  thumbnail
+ */
+function corridor_post_thumbnail( $size ) {
+	$post = get_post();
+
+	if ( ! $post ) {
+		return;
+	}
+
+	$post_thumbnail_id = get_post_thumbnail_id( $post );
+	if ( empty( $post_thumbnail_id ) ) {
+		?>
+		<img width="300" height="250"
+		     src="<?php echo get_parent_theme_file_uri( '/assets/img/default-cover.png' ) ?>"
+		     class="attachment-corridor-post-gallery size-corridor-post-gallery wp-post-image" alt=""/>
+		<?php
+	} else {
+		the_post_thumbnail( $size );
+	}
+
+}

@@ -31,7 +31,7 @@ if ( ! function_exists( 'corridor_setup' ) ) :
 
 		// Register Navigation Menus.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Main Navigation' ),
+			'primary' => esc_html__( 'Main Navigation', 'corridor' ),
 		) );
 	}
 endif;
@@ -79,6 +79,7 @@ function corridor_widgets_init() {
 	) );
 
 }
+
 add_action( 'widgets_init', 'corridor_widgets_init' );
 
 

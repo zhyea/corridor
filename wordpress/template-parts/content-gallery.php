@@ -9,7 +9,7 @@
 <div class="post">
     <div class="post-image">
         <a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
-			<?php the_post_thumbnail( 'corridor-post-gallery' ); ?>
+			<?php corridor_post_thumbnail( 'corridor-post-gallery' ); ?>
         </a>
         <div class="post-remark">
 			<?php the_excerpt(); ?>
